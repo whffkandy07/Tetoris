@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>내 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="portfolio-container">
+        <h2>📂과제 아카이브</h2>
+
+        <details>
+            <summary><strong>📁 2025년</strong></summary>
+
+            <details open>
+                <summary>📘 1학기</summary>
+
+                <details open>
+                    <summary>🤖 AI사무업무활용</summary>
+                    <ul>
+                        <li><a href="#" onclick="openPreview('/portfolios/25/1/AI/2021202040Homework3.pdf', 'AI를 활용하여 발표자료를 구성하는 과제. \n주제는 양자컴퓨터에 대해 알아보는 것이다.'); return false;">리서치로 생성한 문서를 발표자료 생성 AI인 감마를 활용해 발표자료 생성</a></li>
+                        <li><a href="#" onclick="openPreview('/portfolios/25/1/AI/2021202040Homework4.pdf', 'AI를 활용하여 발표자료를 구성하는 과제. \n주제는 양자컴퓨터에 대해 알아보는 것이다.'); return false;">AI를 활용한 발표자료 구성</a></li>
+                        <li><a href="#" onclick="openPreview('/portfolios/25/1/AI/2021202040Homework5.pdf', 'AI를 활용하여 데이터를 분석해 시작화 하는 보고서를 작성하는 과제. \n주제는 실패하지 않는 게임 만들기이다.'); return false;">AI를 활용한 데이터 분석</a></li>
+
+                    </ul>
+                </details>
+
+                <details open>
+                    <summary>🌐 인터넷활용</summary>
+                    <ul>
+                        <li><a href="portfolio/25년/1학기/인터넷활용/과제1.pdf" target="_blank">과제1.pdf</a></li>
+                    </ul>
+                </details>
+            </details>
+        </details>
+
+        <div id="pdf-modal" class="pdf-modal">
+            <div class="pdf-modal-content">
+                <button class="close-btn" onclick="closePreview()">✖</button>
+                <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+                <div id="pdf-description" class="pdf-description"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

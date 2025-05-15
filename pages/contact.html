@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>내 홈페이지</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="contact-container">
+        <h2>📮 연락하기 / Contact</h2>
+
+        <p>※ Email address</p>
+        <div class="contact-item">
+            <strong>Naver :&emsp;&ensp;&ensp;</strong>
+            <span class="copy-target" id="email1">whffkandy07@naver.com</span>
+            <img src="/images/iconCopy.png" class="copy-btn" onclick="copyEmail('email1')" title="복사하기" />
+        </div>
+
+        <div class="contact-item">
+            <strong>Google :&ensp;&ensp;&ensp;</strong>
+            <span class="copy-target" id="email2">andymoon02@gmail.com</span>
+            <img src="/images/iconCopy.png" class="copy-btn" onclick="copyEmail('email2')" title="복사하기" />
+        </div>
+
+        <div class="contact-item">
+            <strong>University :</strong>
+            <span class="copy-target" id="email3">whffkandy07@kw.ac.kr</span>
+            <img src="/images/iconCopy.png" class="copy-btn" onclick="copyEmail('email3')" title="복사하기" />
+        </div>
+        <p id="copy-msg" class="copy-message">📋복사됨!</p>
+        <br />
+        <p>※ Others</p>
+
+        <div class="contact-item">
+            <strong>디스코드 :&emsp;</strong>
+            <span>whffkandy07#9999</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

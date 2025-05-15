@@ -1,0 +1,367 @@
+/* 전체 페이지 공통 설정 */
+body {
+	font-family: "Noto Sans KR", sans-serif;
+	background-image: url("images/BG02.png");
+
+	margin: 0;
+	padding: 0;
+	background-color: #fed2fc;
+  }
+  
+  /* 제목 영역 */
+  nav {
+	background-color: #991aa5;
+  }
+  nav h1 {
+	position: relative;
+	height: 80vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid #aaa;
+	overflow: hidden;
+	font-size: 3rem;
+  }
+  nav h1::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/kirbo.png");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+	z-index: 0;
+  }
+  nav h1 span {
+	position: relative;
+	z-index: 1;
+  }
+  
+  /* 메뉴바 고정 */
+  .navbar-menu-fixed {
+	position: sticky;
+	top: 0;
+	background-color: #991aa5;
+	z-index: 999;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	height: 64px;
+  }
+  
+  /* 메뉴 리스트 */
+  .navbar-menu-fixed ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0;
+	padding: 0 60px;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  /* 항목 */
+  .navbar-menu-fixed li {
+	display: flex;
+	align-items: center;
+	height: 100%;
+  }
+  
+  /* 구분자 */
+  .navbar-menu-fixed .divider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	padding: 0 12px;
+	color: #e3e3e3;
+	user-select: none;
+  }
+  
+  /* 버튼 */
+  .navbar-menu-fixed a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0 32px;
+	min-width: 200px;
+	background-color: #991aa5;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 2rem;
+	text-decoration: none;
+	border: none;
+	transition: all 0.2s ease;
+	box-sizing: border-box;
+  }
+  
+  /* hover */
+  .navbar-menu-fixed a:hover {
+	background-color: #cb41d8;
+  }
+  
+  /* 클릭 시 효과 */
+  .navbar-menu-fixed a:active {
+	background-color: #681870;
+	transform: translateY(1px);
+  }
+  
+  /* 선택된 메뉴 강조 */
+  .navbar-menu-fixed a.active {
+	padding: 0 48px;
+	background-color: #cb41d8;
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+  }
+  
+  /* 본문 콘텐츠 */
+  .content {
+
+	background-color: white;
+	padding: 40px;
+	border-radius: 20px;
+	margin: 40px auto;
+	width: 60%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-container {
+	padding: 40px;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin: 40px auto;
+	width: 80%;
+  }
+  
+  .profile-section {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-bottom: 30px;
+  }
+  
+  .profile-photo {
+	width: 180px;
+	height: 220px;
+	border-radius: 12px;
+	object-fit: cover;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  .info-table th {
+	text-align: left;
+	width: 120px;
+	padding: 6px 10px;
+	background: #f0eef8;
+  }
+  .info-table td {
+	padding: 6px 10px;
+	background: #faf9fd;
+  }
+  
+  .about-container h2, .about-container h3 {
+	color: #4a3088;
+  }
+  
+  .about-container ul {
+	margin-top: 10px;
+	padding-left: 20px;
+  }
+  
+  .footnote {
+	margin-top: 30px;
+	font-size: 0.8rem;
+	color: #888;
+  }
+
+  .contact-container {
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  width: 60%;
+}
+.contact-container p
+{
+	font-size: 20px;
+	color: #666666;
+}
+
+.contact-item {
+  margin: 16px 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-target {
+  background-color: #f3e8ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.copy-btn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.copy-btn:hover {
+  transform: scale(1.2);
+}
+
+.copy-message {
+  color: #7844cc;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.portfolio-container {
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  width: 70%;
+}
+
+details {
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+details > summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 6px 0;
+}
+
+ul {
+  margin-left: 24px;
+  list-style-type: "📄 ";
+}
+
+a {
+  text-decoration: none;
+  color: #5c2da5;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.preview-box {
+  display: none; /* 기본은 숨김 */
+  margin-top: 30px;
+  padding: 20px;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.pdf-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.pdf-modal-content {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 1000px;
+  height: 600px;
+  padding: 20px;
+  gap: 20px;
+  position: relative;
+}
+
+#pdf-frame {
+  width: 70%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.pdf-description {
+  width: 30%;
+  overflow-y: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #f6f1ff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: #222;
+}
+
+.unity-container {
+  margin-top: 60px;
+  text-align: center;
+  background: #f5f0ff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.unity-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 62.5%; /* 600 / 960 = 62.5% → 16:10 비율 유지 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+.unity-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
